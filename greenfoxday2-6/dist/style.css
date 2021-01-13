@@ -1,0 +1,28 @@
+main {
+  
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: purple
+}
+
+.A {
+  color: pink;
+  text-decoration: underline;
+  text-decoration-color: pink;
+}
+
+.B{
+  text-decoration: underline;
+}
+.C {
+  list-style-type: upper-roman;
+}
+
+.D {
+  list-style-type: square;
+}

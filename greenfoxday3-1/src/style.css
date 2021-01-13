@@ -1,0 +1,116 @@
+.container {
+  max-width: 600px;
+  /* pokud možno šířku 600px, jinak menší */
+  margin-left: auto;
+  margin-right: auto;
+  /* zarovnání na střed=> nefunguje center*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  width: 180px;
+  color: white;
+  background: #3cb878;
+  text-align: center;
+  /* text-align umísťuje i obrázek*/
+  padding-top: 20px;
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 3px 2px grey;
+  /* dolu - pravo - vypaření - rozšíření - barva*/
+}
+
+.card-holder {
+    display: flex;
+    justify-content: space-between; /* pro vodorovnou osu */
+      /*  obecně flexbox vygooglit!!!
+          flex-start = levá strana boxu
+          flex-end = pravá strana boxu 
+          space-between = auto mezera mezi
+          space-around = auto mezere okolo i mezi*/
+    align-items: flex-start; /* pro svislou osu */
+      /*  flex-start = levá strana boxu
+          flex-end = pravá strana boxu 
+          center = auto umístění na střed
+    
+          flex-direction: cross => prohodí osy
+          flex-wrap: wrap => umožní změnu počtu boxů na řádku
+          align-content: flex-start => přemístí boxy co nejblíže startu (levý horní roh)
+          flex-grow: 1 => dovolí boxům měnit velikosti*/
+}
+
+#terms {
+  position: relative;
+  top: 2px;
+  /*relative = pozice vůči tagu (label) 
+    absolute = pozice vůči celé stránce
+    fixed = vůči oknu prohlížeče */
+}
+
+.newsletter-form {
+  border: 1px solid #cfcfcf;
+  padding: 10px;
+  border-radius: 3px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.newsletter-form h3 {
+  margin-top: 0px;
+}
+
+.closing-x {
+  position: absolute;
+  top: 0px;
+  right: 5px; 
+  /* změní se mi kurzor při najetí na x*/
+}
+
+.newsletter-form #email {
+/* takto můžu vybrat jendotlivé prvky v konkrétní class*/
+  display: block;
+  /* block = vlastní řádek */
+  width: 100%;
+  border: 1px solid #cfcfcf;
+  /* místo 1px se dá napsat thin, místo 0px se dá napsat none */
+  height: 30px;
+  padding-left: 3px;
+  /* odsazení textu */
+  border-radius: 3px;
+  box-sizing: border-box;
+  /* znamená, že se budou všechny odsazení apod. měřit dovnitř boxu (defaultní je "content-box"*/
+}
+
+.newsletter-form button {
+  display: block;
+  width: 100%;
+  background: #3cb878;
+  color: white;
+  border: 0px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.closing-x button {
+  background: none;
+  color: #cfcfcf;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.newsletter-form {
+  color: grey;
+}
+
+#questioncircle {
+  height: 100px;
+  width: 100px;
+  background: #3cb878;
+  border-radius: 50%;
+  /* 50% radius = kruh*/
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}

@@ -1,0 +1,64 @@
+main {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lista {
+  background: aqua;
+  width: 100%;
+  height: 100px;
+}
+
+.uroven2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.zapati {
+  background: blue;
+  width: 100%;
+  height: 100px;
+}
+
+.levypanel {
+  background: orange;
+  width: 20%;
+}
+
+.hlavniobsah {
+  background: red;
+  width: 55%;
+  height: 100%;
+}
+
+.pravypanel {
+  background: purple;
+  width: 20%;
+}
+
+.obsah {
+  display: flex;
+  height: 300px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.plovouci {
+  width: 40px;
+  height: 40px;
+  background: black; 
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*.plovouci {
+  width: 40px;
+  height: 40px;
+  background: black;
+  position: relative;
+  left: 90%;
+  top: 91.5%;  
+} */
+

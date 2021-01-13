@@ -1,0 +1,69 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.obsah {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.lista {
+  background: purple;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.scrollovaci {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.hlavni {
+  background: lime;
+  width: 30%;
+  height: 500px;
+  /*flex-grow: 3;*/
+}
+
+.vedlejsi {
+  background: yellow;
+  width: 70%;
+  height: 500px;
+  /*flex-grow: 1;*/
+}
+
+.tlacitko1 {
+  background: cyan;
+  width: 10%;
+  height: 30px;
+  margin-left: 105px;
+}
+
+.tlacitko2 {
+  background: cyan;
+  width: 15%;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.tlacitko3 {
+  background: cyan;
+  width: 10%;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.zapati {
+  width: 100%;
+  height: 80px;
+  background: lightgrey;
+  margin-top: 10px;
+}

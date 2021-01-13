@@ -1,0 +1,153 @@
+main {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p, li {
+  font-size: 8px;
+}
+
+ul {
+  margin-left: 0px;
+  padding-left: 5%;
+  margin-top: 10px;
+}
+
+li {
+  margin-right: 5%;
+	padding: 0px;
+	margin: 0px;
+}
+
+h5, h6 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+h4 {
+  font-size: 13px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+h5 {
+  font-size: 11px;
+  padding-top: 5px;
+}
+
+h6 {
+  font-family: 'Merriweather', serif;
+  font-size: 8px;
+}
+
+.zahlavi {
+  width: auto;
+  height: 150px;
+  background-image: url(https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png);
+  background-repeat: no-repeat;
+  background-size: auto 150px;
+  background-position: center;
+}
+
+.textzahlavi {
+  position: relative;
+  left: 10%;
+  top: 40px;
+  font-family: 'Abril Fatface', cursive;
+  /*border: 0px solid white;*/
+}
+
+.h1 {
+  margin: 0px;
+  padding: 0px;
+  /*border: 1px solid black;*/
+}
+
+.h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+.obsah {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.obsah div {
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+}
+
+.jedna {
+  font-size: 12px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.jedna li {
+  list-style-type: square;
+}
+
+.dva {
+  width: 40%;
+  box-sizing: content-box;
+  height: lenght;
+}
+
+.apostrof {
+  font-size: 40px;
+  font-family: 'Abril Fatface', cursive;
+  color: white;
+  position: absolute;
+  margin: 0px;
+  margin-left: 10px;
+  padding: 0px;
+}
+
+.galaxy {
+  font-size: 23px;
+  font-family: 'Abril Fatface', cursive;
+  color: white;
+  margin: 0%;
+  background: grey;
+  padding: 10%;
+  padding-left: 15%;
+  padding-top: 12%;
+}
+
+.tri {
+  width: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.hornilista {
+  width: 100%;
+  background: grey;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  border: 0px solid white;
+}
+
+button {
+  color: white;
+  background: grey;
+  border: 0px;
+}
+
+.obsaha {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  border: 0px solid white;
+}

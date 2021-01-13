@@ -1,0 +1,21 @@
+main {
+  border: 5px solid #4285f4;
+  text-align: center;
+  width: 200px;
+  font-weight: bold;
+}
+.A,.B {
+  margin: 10px;
+  padding: 0px;
+  font-size: 24px;
+  font-family: 'Baloo Tammudu 2', cursive;
+  color: white;
+}
+
+.A {
+  background: #E67676;
+}
+
+.B {
+  background: #A9E6E6;
+}

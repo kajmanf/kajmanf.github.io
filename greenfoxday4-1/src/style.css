@@ -1,0 +1,19 @@
+div {
+  cursor: pointer;
+  display: block;
+  margin: 10px;
+  font-size: 30px;
+  font-family: 'Sen', sans-serif;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: lime;
+  text-decoration: none;
+}
+
+
+

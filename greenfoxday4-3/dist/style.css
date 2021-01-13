@@ -1,0 +1,22 @@
+img {
+  width: 150px;
+}
+
+.box {
+  font-family: 'Sen', sans-serif;
+}
+
+.obrazky {
+  display: flex;
+  text-align: center;
+  justify-content: space between;
+}
+
+section {
+  width: 200px;
+}
+
+a {
+  display: block;
+  text-aligh: center;
+}

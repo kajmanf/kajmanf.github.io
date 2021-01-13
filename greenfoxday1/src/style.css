@@ -1,0 +1,27 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  propertyName: value;
+  background: #654321;
+  color: white;
+  /*The padding is that gets the background color*/
+  padding: 2%;
+  border: 5px solid black;
+  /*The marging is not that gets the background color*/
+  margin: 10px;
+}
+
+.red {
+  color: red;
+  font-size:24px;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}

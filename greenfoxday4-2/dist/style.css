@@ -1,0 +1,14 @@
+div {
+  display: inline;
+}
+
+img {
+  width: 300px;
+  margin: 50px;
+  cursor: pointer;
+}
+
+img:hover {
+  width: 400px;
+  margin: 0px;
+}
