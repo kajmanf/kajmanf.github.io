@@ -1,0 +1,32 @@
+main {
+    border: 6px solid #4285f4;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    font-weight: bold;
+  }
+  .N,.E,.S,.W {
+    margin: 0px;
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'Baloo Tammudu 2', cursive;
+  }
+  
+  .N {
+    background: #E67676;
+    color: white;
+  }
+  
+  .E {
+    background: #F2F062;
+    color: white;
+  }
+  .S {
+    background: #A9E6E6;
+    color: white;
+  }
+  .W {
+    background: #7692E4;
+    color: white;
+  }
