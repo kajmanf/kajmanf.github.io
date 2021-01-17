@@ -61,3 +61,57 @@ if (objekt['hasManyColors'].length >= 3)  {
   } else {
     console.log("false");    
   } ;
+
+let highestNumber = 9;
+for (let i = 0; i<=highestNumber; i++) {
+  console.log(i)
+};
+
+console.log(" ")
+
+let secondHighestNumber = highestNumber + 1;
+for (let i = 0; i <= secondHighestNumber; i++) {
+  console.log(i)
+};
+
+console.log(" ")
+
+let max = 20;
+for (let i = 2; i < max; i++) {
+  if (i % 2 === 0) {
+    console.log(i)
+  }
+};
+
+console.log(" ")
+
+let N = 10;
+for (let i = 1; i <= N; i++) {
+  console.log(i)
+};
+
+console.log(" ")
+
+
+let greetingTo = jmeno => {
+  console.log(`Hello ${jmeno}!`);
+};
+
+greetingTo("Adam"); // takto přidávám proměnné do funkce
+
+console.log(" ")
+
+let printValues = array => {
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+};
+
+printValues ([0, 3, 6, 7, 9])
+
+console.log(" ")
+
+let myNumbers = [0, 3, 6, 7, 9];
+myNumbers.forEach((number) => {
+  console.log(number);
+  })
