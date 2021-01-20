@@ -1,3 +1,118 @@
-h1 {
-    color:blue;
+body {
+    background: rgb(199, 191, 191);
+}
+#obsah {
+    width: 1100px;
+    height: 540px;
+    background: none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+
+#horniPanel {
+    display: flex;
+    width: 100%;
+    height: 540px;
+    background: grey;
+    border-radius: 50px;
+}
+
+#thumbnailsBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: none;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.sipka3 {
+    background: rgb(228, 230, 228);
+    width: 70px;
+    height: 100%;
+}
+
+#sipka1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#sipka2 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#viewer {
+    background-image: url("img/img1.png");
+    background-size: 960px 540px;
+    width: 96%;
+    height: 100%;
+    margin: none;
+    position: relative;
+}
+
+h1,p {
+    color: white;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#viewer .pictureDescription {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.thumbnail {
+    background:none;
+    height:100px;
+    width: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.prosipku {
+    width: 100%;
+    height: 10px;
+    background: none;
+}
+
+.thumbnail img {
+    width: 70px;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 0px;
+    padding: 0px;
+    border: 5px solid white;
+}
+
+.thumbnail .pictureDescription {
+    display: none;
+}
+
+.sipka {
+    width: 0;
+    height: 0;
+    margin-left:auto;
+    margin-right:auto;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 10px solid none;
+    background: none;
+}
+
+#sipkaOn {
+    width: 0;
+    height: 0;
+    margin-left:auto;
+    margin-right:auto;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 10px solid white;
+    background: none;
 }
