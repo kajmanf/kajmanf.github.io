@@ -37,11 +37,18 @@ body {
 #sipka1 {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    background-image: url("img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #sipka2 {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: url("img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
 }
 
 #viewer {
