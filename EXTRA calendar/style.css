@@ -1,0 +1,128 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#header {
+    font-size: 50px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.body {
+    position: relative;
+    width: 1000px;
+    height: auto;
+    background: grey;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+.tyden1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 95%;
+    height: auto;
+    background: peru;
+}
+
+.radek {
+    display: flex;
+    height: auto;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: auto;
+}
+
+.hodina {
+    width: 5%;
+    height: auto;
+    background: black;
+    margin: 0.5%;
+}
+
+.hodina:hover {
+    background: grey;
+}
+
+.hodina p {
+    font-size: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.input {
+    display: flex;
+    align-items: stretch;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    background: green;
+}
+
+.prvni {
+    width: 100px;
+    height: auto;
+    background: black;
+    margin: 0.5%;
+}
+
+#prvniRadek p {
+    font-size: 10px;
+}
+
+.h11 {
+    margin-left: 2.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#popUp {
+    position: fixed;
+    left: 0; 
+    right: 0;
+    top: 150px;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 400px;
+    height: 150px;
+    background: cornflowerblue;
+}
+
+#inPopUp {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background:grey;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#inPopUp h3, button, input {
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#inPopUp button:hover {
+    font-weight: bold;
+}
+
+#zavrit {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    border-radius: 5px;
+}
