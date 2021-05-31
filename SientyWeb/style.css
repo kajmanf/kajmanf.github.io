@@ -1,17 +1,17 @@
 body {
     display: block;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    background-color: grey;
+    background-color: white;
     font-family: 'Barlow', sans-serif;
 }
 
 h1 {
     margin: 10px;
-    width: 35%;
+    width: 50%;
     font-family: 'Roboto', sans-serif;
     color: black;
 }
@@ -20,49 +20,107 @@ h2 {
     margin: 10px;
     width: auto;
     font-family: 'Roboto', sans-serif;
-    color: green;
+    color: #4A8574;
 }
 
 h3 {
     margin: 10px;
     width: auto;
     color: black;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 a {
+    margin-left: 5px;
+    color: #4A8574;
+    font-size: 10px;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    background: white;
+    margin: 0;
+}
+
+.headerright {
+    border-bottom: 1px solid #4A8574;
+    width: 75%;
+}
+
+.headerleft {
+    width: 25%;
+}
+
+.headerright h3 {
+    font-size: 7px;
+    margin: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+    position: absolute;
+    right: 0;
+    color: #4A8574;
+}
+
+.header img {
+    width: 15%;
     margin-left: 5px;
 }
 
 .part1 {
     position: relative;
     display: block;
-    width: 100%;
-    height: 300px;
+    margin-left: auto;
+    width: 95%;
+    height: 500px;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid white;
+    background-image: url("img/png/Artboard\ 4@300x.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 0px;
 }
 
 .part2 {
-    width: 100%;
+    margin-left: auto;
+    width: 95%;
     height: 200px;
-    background-color: white;
-    border: 1px solid black;
+    background: white;
+    background-image: url("img/png/Artboard\ 5@300x.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 95%;
+    border: 1px solid white;
+
 }
 
 .part3 {
     display: flex;
-    width: 100%;
+    margin-left: auto;
+    width: 95%;
     height: auto;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid white;
+}
+
+.part3 img {
+    width: 8%;
+    height: 8%;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .part1div {
-width: 40%;
-position: absolute;
-right: 0;
-bottom: 0;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.part1 h1 {
+    margin-top: 5%;
 }
 
 .part2div {
@@ -72,12 +130,12 @@ bottom: 0;
 
 .part31 {
     width: 50%;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 .part32 {
     flex-direction: column;
     width: 50%;
-    border: 1px solid black;
+    border: 1px solid white;
     margin-left: 20px;
 }
 
@@ -88,14 +146,58 @@ bottom: 0;
 }
 
 .kontakty1 {
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 10px;
+    font-weight: bold;
 }
 
-.logokontakt {
-    width: 20px;
-    height: 20px;
-    background-color: black;
+.bottom {
+    display: flex;
+    width: 100%;
+    background: white;
+    border: 1px solid white;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.bottom img {
+    margin-left: 5px;
+    width: 20%;
+    margin-top: 5%;
+}
+
+.bottomright {
+    width: auto;
+    text-align: end;
+    align-content: center;
+    margin-right: 5%;
+    border: 1px solid white;
+}
+
+.bottombox img {
+    width: 12%;
+    height: 12%;
+}
+
+.bottomright a {
+    font-size: 7px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.bottomright1 {
+    width: auto;
+    text-align: end;
+    align-content: center;
+    margin-right: 5%;
+    border: 1px solid white;
+}
+
+.bottomright1 a {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
