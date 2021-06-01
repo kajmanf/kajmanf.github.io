@@ -129,9 +129,47 @@ a {
     }
 
 .part31 {
-    width: 50%;
-    border: 1px solid white;
+    width: 40%;
+    border: 1.5px DASHED #4A8574;
+    border-radius: 5%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding-left: 0;
 }
+
+.part31 input {
+    width: 98%;
+    border: none;
+    border-bottom: 1.5px solid #4A8574;
+    font-size: 8px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4A8574;
+    opacity: #4A8574; /* Firefox */
+    padding-left: 3%;
+  }
+
+button {
+    width: 101%;
+    height: 20%;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: #4a8574;
+    margin: 0;
+    color: white;
+    font-size: 8px;
+    font-weight: bold ;
+}
+
+.name {
+    height: 10%;
+}
+
+.blank {
+    height: 20%;
+}
+
 .part32 {
     flex-direction: column;
     width: 50%;
