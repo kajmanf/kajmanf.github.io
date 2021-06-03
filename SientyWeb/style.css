@@ -1,7 +1,6 @@
 body {
     display: block;
-    width: 100%;
-    max-width: 500px;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -10,33 +9,40 @@ body {
 }
 
 h1 {
-    margin: 10px;
+    margin: 5%;
     width: 50%;
-    font-family: 'Roboto', sans-serif;
+    font-size: 5vw;
+    font-family: 'Barlow', sans-serif;
     font-weight: bold;
     color: black;
 }
 
 h2 {
-    margin: 10px;
+    margin: 5%;
+    font-size: 3vw;
     width: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     color: #4A8574;
 }
 
 h3 {
-    margin: 10px;
+    margin: 5%;
+    font-size: 1.5vw;
     width: auto;
     color: black;
-    font-size: 8px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'myFont', sans-serif;
 }
 
 a {
-    margin-left: 5px;
+    margin-left: 2.5%;
     color: #4A8574;
-    font-size: 10px;
-    font-family: 'Barlow', sans-serif;
+    font-size: 1vw;
+    font-family: 'myFont', sans-serif;
+}
+
+@font-face {
+  font-family: 'myFont';
+  src: url(font/123.otf);
 }
 
 .header {
@@ -44,6 +50,7 @@ a {
     position: relative;
     background: white;
     margin: 0;
+    padding-bottom: 2%;
 }
 
 .headerright {
@@ -56,7 +63,7 @@ a {
 }
 
 .headerright h3 {
-    font-size: 7px;
+    font-size: 1vw;
     margin: 0;
     margin-top: 5px;
     margin-right: 5px;
@@ -74,12 +81,12 @@ a {
     position: relative;
     display: block;
     margin-left: auto;
-    width: 95%;
-    height: 500px;
+    width: 90%;
+    height: 60vw;
     background-color: white;
     border: 1px solid white;
     background-image: url("img/png/Artboard4@300x.png");
-    background-size: 100%;
+    background-size: 90% 90%;
     background-repeat: no-repeat;
     background-position: right;
     margin-top: 0px;
@@ -88,7 +95,7 @@ a {
 .part2 {
     margin-left: auto;
     width: 95%;
-    height: 200px;
+    height: 30vw;
     background: white;
     background-image: url("img/png/Artboard5@300x.png");
     background-size: 40%;
@@ -110,7 +117,7 @@ a {
 .part3 img {
     width: 8%;
     height: 8%;
-    margin-left: 5px;
+    margin-left: 2.5%;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -128,7 +135,7 @@ a {
 
 .part2div {
     width: 55%;
-    padding-top: 40px;
+    padding-top: 10%;
     }
 
 .part31 {
@@ -142,8 +149,8 @@ a {
 .form1 {
     border: 1.5px DASHED #4A8574;
     border-bottom: none;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
     height: 80%;
 }
 
@@ -156,68 +163,87 @@ a {
 button {
     width: 100%;
     height: 20%;
-    border-radius: 7px;
+    border-radius: 1vw;
     border: none;
     background-color: #4a8574;
     margin: 0;
     color: white;
-    font-size: 8px;
+    font-size: 2vW;
     font-weight: bold ;
+    font-family: 'myFont', sans-serif;
 }
 
 .name {
     width: 98%;
     border: none;
-    font-size: 8px;
+    font-size: 1vw;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
     height: 20%;
-    border-bottom: 1.5px solid #4A8574;
+    border-bottom: 1.5px solid #4A8574;  
 }
 
 .blank {
     width: 98%;
     border: none;
-    font-size: 8px;
+    font-size: 1vw;
     height: auto;
+    margin-top: 1vw;
 }
 
 .part32 {
     flex-direction: column;
     width: 50%;
     border: 1px solid white;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 .kontakty {
     display:flex;
-    margin-left: 10px;
-    margin-top: 5px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.kontakty a {
+    font-size: 1.5vW;
+    font-family: 'myFont', sans-serif;
+}
+
+#kontaktyhorni {
+    padding-top: 5%;
+}
+
+#kontaktydolni {
+    padding-bottom: 5%;    
 }
 
 .kontakty1 {
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 10px;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 1vw;
     font-weight: bold;
 }
 
 .bottom {
     display: flex;
+    position: relative;
     width: 100%;
     background: white;
     border: none;
-    padding-top: 10%;
+    padding-top: 0;
     padding-bottom: 5%;
     background-image: url("img/png/Artboard11@300x.png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position-y: bottom;
 }
 
 .bottom img {
-    margin-left: 7%;
-    width: 20%;
-    margin-top: 5%;
-    padding-top: 5%;
+    margin-left: 3vw;
+    width: 15vw;
+    margin-top: 10vw;
+    padding-top: 5vw;
 }
 
 .bottomright {
@@ -230,33 +256,40 @@ button {
 }
 
 .bottombox {
-    padding-top: 4%;
+    position: absolute;
+    right: 0;
+    padding-top: 20%;
     margin-right: 5%;
+    text-align: end;
+    align-content: flex-end;
 }
 
 .bottombox img {
     width: 12%;
     height: 12%;
-}
-
-.bottomright a {
-    font-size: 7px;
     margin: 0;
-    text-align: center;
     padding: 0;
 }
 
+.bottomright a {
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
 .bottomright1 {
-    width: auto;
+    width: 100%;
     text-align: end;
     align-content: center;
-    margin-right: 5%;
+    padding-right: 0%;
     margin-top: 0;
 
 }
 
 .bottomright1 a {
-    font-size: 10px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    padding-right: 5%;
+    font-size: 1.5vW;
+    font-family: 'MyFont', sans-serif;
 }
