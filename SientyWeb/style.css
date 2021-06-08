@@ -3,6 +3,8 @@ body {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    padding-top: 0;
     height: auto;
     background-color: white;
     
@@ -46,35 +48,56 @@ a {
 }
 
 .header {
+    float: top;
     display: flex;
-    position: relative;
+    position: fixed;
     background: white;
     margin: 0;
-    padding-bottom: 2%;
+    padding: 0;
+    height: auto;
+    width: 70%;
+    z-index: 1;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.teloo {
+    padding-top: 3vW;
 }
 
 .headerright {
-    border-bottom: 1px solid #4A8574;
+    position: absolute;
+    padding: 0;
+    right: 0;
+    height: 4vw;
+    border-bottom: 0.15vW solid #4A8574;
     width: 75%;
+    height: 4vw;
 }
 
 .headerleft {
     width: 25%;
+    padding: 0;
 }
 
 .headerright h3 {
     font-size: 1vw;
     margin: 0;
-    margin-top: 5px;
-    margin-right: 5px;
-    position: absolute;
+    margin-top: 0.2vW;
+    margin-right: 2vW;
+    padding: 0;
+    text-align: right;
     right: 0;
-    color: #4A8574;
+    color: black;
 }
 
 .header img {
-    width: 13%;
+    width: 3.65vw;
     margin-left: 20%;
+    margin-top: 1vw;
+    padding: 0;
 }
 
 .part1 {
@@ -139,11 +162,12 @@ a {
     }
 
 .part31 {
-    width: 40%;
+    width: 45%;
     border-radius: 5%;
     margin-top: 4%;
     margin-bottom: 3%;
     padding-left: 0;
+    padding-right: 5vw;
 }
 
 .form1 {
@@ -188,8 +212,21 @@ button {
     border: none;
     font-size: 1vw;
     height: auto;
-    margin-top: 1vw;
+    margin-top: 0.5vw;
 }
+
+textarea:focus, input:focus {
+    color: #4A8574;
+    font-family: 'myFont', sans-serif;
+}
+
+textarea, input {
+    color: #4A8574;
+    font-family: 'myFont', sans-serif;
+    outline: none;
+    padding-left: 0.5vw;
+}
+¨
 
 .part32 {
     flex-direction: column;
