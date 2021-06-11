@@ -12,9 +12,9 @@ body {
 
 h1 {
     margin: 5%;
-    width: 50%;
+    width: 60%;
     font-size: 5vw;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'myFont', sans-serif;
     font-weight: bold;
     color: black;
 }
@@ -23,7 +23,7 @@ h2 {
     margin: 5%;
     font-size: 3vw;
     width: auto;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'myFont', sans-serif;
     color: #4A8574;
 }
 
@@ -32,14 +32,14 @@ h3 {
     font-size: 1.5vw;
     width: auto;
     color: black;
-    font-family: 'myFont', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 a {
     margin-left: 2.5%;
     color: #4A8574;
     font-size: 1vw;
-    font-family: 'myFont', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 @font-face {
@@ -51,7 +51,7 @@ a {
     float: top;
     display: flex;
     position: fixed;
-    background: green;
+    background: white;
     margin: 0;
     padding: 0;
     height: auto;
@@ -164,10 +164,10 @@ a {
 .part31 {
     width: 45%;
     border-radius: 5%;
-    margin-top: 4%;
-    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-bottom: 2%;
     padding-left: 0;
-    padding-right: 5vw;
+    padding-right: 4vw;
 }
 
 .form1 {
@@ -182,6 +182,7 @@ a {
     color: #4A8574;
     opacity: #4A8574; /* Firefox */
     padding-left: 3%;
+    font-family: 'Barlow', sans-serif;
   }
 
 button {
@@ -194,8 +195,12 @@ button {
     color: white;
     font-size: 2vW;
     font-weight: bold ;
-    font-family: 'myFont', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
+
+.button:active {
+    transform: translateY(10px);
+  }
 
 .name {
     width: 98%;
@@ -230,9 +235,11 @@ textarea, input {
 
 .part32 {
     flex-direction: column;
-    width: 50%;
-    border: 1px solid white;
-    margin-left: 5%;
+    width: 60%;
+}
+
+.part32 h2 {
+    width: 100%;
 }
 
 .kontakty {
@@ -243,7 +250,6 @@ textarea, input {
 
 .kontakty a {
     font-size: 1.5vW;
-    font-family: 'myFont', sans-serif;
 }
 
 #kontaktyhorni {
@@ -328,5 +334,6 @@ textarea, input {
 .bottomright1 a {
     padding-right: 5%;
     font-size: 1.5vW;
-    font-family: 'MyFont', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
 }
