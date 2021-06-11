@@ -227,7 +227,7 @@ textarea:focus, input:focus {
 
 textarea, input {
     color: #4A8574;
-    font-family: 'myFont', sans-serif;
+    font-family: 'Barlow', sans-serif;
     outline: none;
     padding-left: 0.5vw;
 }
