@@ -222,7 +222,7 @@ button {
 
 textarea:focus, input:focus {
     color: #4A8574;
-    font-family: 'myFont', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 textarea, input {
