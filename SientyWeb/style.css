@@ -54,13 +54,14 @@ a {
     background: white;
     margin: 0;
     padding: 0;
-    height: auto;
+    height: 4vw;
     width: 70%;
     z-index: 1;
 }
 
 .header a {
     text-decoration: none;
+    padding: 0;
 }
 
 .teloo {
@@ -68,14 +69,14 @@ a {
 }
 
 .headerright {
-    position: absolute;
     padding: 0;
     right: 0;
-    height: 4vw;
-    border-bottom: 0.15vW solid #4A8574;
+    height: auto;
+    border-bottom: 0.2vW solid #4A8574;
     width: 75%;
-    height: 4vw;
+    min-height: 25px;
 }
+
 
 .headerleft {
     width: 25%;
@@ -85,7 +86,8 @@ a {
 .headerright h3 {
     font-size: 1vw;
     margin: 0;
-    margin-top: 0.2vW;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: 2vW;
     padding: 0;
     text-align: right;
@@ -175,6 +177,7 @@ a {
     border-bottom: none;
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
+    padding-right: 0.35vw;
     height: 80%;
 }
 
