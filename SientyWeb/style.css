@@ -1,6 +1,7 @@
 body {
     display: block;
     width: 70%;
+    min-width: 290px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -11,7 +12,7 @@ body {
 }
 
 h1 {
-    margin: 5%;
+    margin: 2.5vw;
     width: 60%;
     font-size: 5vw;
     font-family: 'myFont', sans-serif;
@@ -20,7 +21,7 @@ h1 {
 }
 
 h2 {
-    margin: 5%;
+    margin: 2.5vw;
     font-size: 3vw;
     width: auto;
     font-family: 'myFont', sans-serif;
@@ -28,7 +29,7 @@ h2 {
 }
 
 h3 {
-    margin: 5%;
+    margin: 2.5vw;
     font-size: 1.5vw;
     width: auto;
     color: black;
@@ -36,7 +37,7 @@ h3 {
 }
 
 a {
-    margin-left: 2.5%;
+    margin: 1.25vw;
     color: #4A8574;
     font-size: 1vw;
     font-family: 'Barlow', sans-serif;
@@ -55,7 +56,9 @@ a {
     margin: 0;
     padding: 0;
     height: 4vw;
+    min-height: 25px;
     width: 70%;
+    min-width: 290px;
     z-index: 1;
 }
 
@@ -65,7 +68,7 @@ a {
 }
 
 .teloo {
-    padding-top: 3vW;
+    padding-top: max(25px, 3vw);
 }
 
 .headerright {
@@ -97,7 +100,8 @@ a {
 
 .header img {
     width: 3.65vw;
-    margin-left: 20%;
+    min-width: 20px;
+    margin-left: 2vw;
     margin-top: 1vw;
     padding: 0;
 }
@@ -123,7 +127,7 @@ a {
     height: 30vw;
     background: white;
     background-image: url("img/png/Artboard5@300x.png");
-    background-size: 40%;
+    background-size: 25vw;
     background-repeat: no-repeat;
     background-position: 95%;
     border: 1px solid white;
@@ -140,9 +144,9 @@ a {
 }
 
 .part3 img {
-    width: 8%;
-    height: 8%;
-    margin-left: 2.5%;
+    width: 4vw;
+    height: 4vw;
+    margin-left: 1.25vw;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -155,25 +159,25 @@ a {
 }
 
 .part1 h1 {
-    margin-top: 5%;
+    margin-top: 2.5vw;
 }
 
 .part2div {
     width: 55%;
-    padding-top: 10%;
+    padding-top: 5vw;
     }
 
 .part31 {
     width: 45%;
-    border-radius: 5%;
-    margin-top: 3%;
-    margin-bottom: 2%;
+    border-radius: 2,5vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
     padding-left: 0;
     padding-right: 4vw;
 }
 
 .form1 {
-    border: 1.5px DASHED #4A8574;
+    border: 0.1vw DASHED #4A8574;
     border-bottom: none;
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
@@ -184,7 +188,7 @@ a {
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #4A8574;
     opacity: #4A8574; /* Firefox */
-    padding-left: 3%;
+    padding-left: 1.5vW;
     font-family: 'Barlow', sans-serif;
   }
 
@@ -212,7 +216,7 @@ button {
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
     height: 20%;
-    border-bottom: 1.5px solid #4A8574;  
+    border-bottom: 0.1vW solid #4A8574;  
 }
 
 .blank {
@@ -247,8 +251,8 @@ textarea, input {
 
 .kontakty {
     display:flex;
-    margin-left: 5%;
-    margin-top: 2%;
+    margin-left: 2.5vw;
+    margin-top: 1vW;
 }
 
 .kontakty a {
@@ -256,17 +260,17 @@ textarea, input {
 }
 
 #kontaktyhorni {
-    padding-top: 5%;
+    padding-top: 2.5vW;
 }
 
 #kontaktydolni {
-    padding-bottom: 5%;    
+    padding-bottom: 2.5vw;    
 }
 
 .kontakty1 {
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-bottom: 5%;
+    margin-left: 2.5vW;
+    margin-top: 1vW;
+    margin-bottom: 2.5vW;
     font-size: 1vw;
     font-weight: bold;
 }
@@ -278,65 +282,62 @@ textarea, input {
     background: white;
     border: none;
     padding-top: 0;
-    padding-bottom: 5%;
+    padding-bottom: 2.5vw;
     background-image: url("img/png/Artboard11@300x.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-y: bottom;
 }
 
-.bottom img {
+.bottomimg {
     margin-left: 3vw;
     width: 15vw;
     margin-top: 10vw;
-    padding-top: 5vw;
+    padding-bottom: 0;
 }
 
 .bottomright {
     width: auto;
-    height: 15%;
     text-align: end;
-    align-content: center;
-    margin-right: 5%;
+    margin-right: 2.5vw;
     border: none;
+    font-size: 1vw;
+    border: 1px solid black;
 }
 
 .bottombox {
     position: absolute;
     right: 0;
-    padding-top: 20%;
-    margin-right: 5%;
+    bottom: 2vw;
     text-align: end;
     align-content: flex-end;
 }
 
 .bottombox img {
-    width: 12%;
-    height: 12%;
+    width: 2vw;
     margin: 0;
     padding: 0;
 }
 
-.bottomright a {
+.bottom a {
     font-size: 1vw;
-    margin: 0;
-    padding: 0;
-    padding: 0;
-    border: 1px solid black;
+    margin-bottom: 0;
+    text-align: end;
 }
 
 .bottomright1 {
     width: 100%;
+    height: auto;
+    max-height: 5vw;
     text-align: end;
-    align-content: center;
-    padding-right: 0%;
-    margin-top: 0;
-
 }
 
 .bottomright1 a {
-    padding-right: 5%;
+    padding: 0;
+    margin: 0;
+    padding-right: 2.5vw;
     font-size: 1.5vW;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
+    text-align: end;
 }
