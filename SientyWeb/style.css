@@ -84,10 +84,10 @@ a {
 .headerright img {
     position: absolute;
     right: 0;
-    top: 0;
-    width: 3vw;
-    min-width: 20px;
-    margin-top: 0.5vw;
+    width: 2vw;
+    min-width: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 0;
 }
 
@@ -102,7 +102,7 @@ a {
     font-size: max(1.5vw, 10px);
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: min(10vw, 7.5%);
+    margin-right: max(3vw, 20px);
     padding: 0;
     text-align: right;
     right: 0;
@@ -192,7 +192,7 @@ a {
     }
 
 .part31 {
-    width: 45%;
+    width: 42.5%;
     border-radius: 2,5vw;
     margin-top: 1.5vw;
     margin-bottom: 1vw;
@@ -203,8 +203,8 @@ a {
 .form1 {
     border: 0.1vw DASHED #4A8574;
     border-bottom: none;
-    border-top-left-radius: 1vw;
-    border-top-right-radius: 1vw;
+    border-top-left-radius: max(1vw,7px);
+    border-top-right-radius: max(1vw,7px);
     padding-right: 0.35vw;
     height: 80%;
 }
@@ -242,13 +242,14 @@ button:hover {
   }
 
 .name {
-    width: 98%;
+    width: 97.5%;
     border: none;
     font-size: 1vw;
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
     height: 20%;
-    border-bottom: 0.1vW solid #4A8574;  
+    border-bottom: 0.1vW solid #4A8574;
+    margin-left: 0.5%;  
 }
 
 .blank {
