@@ -36,7 +36,7 @@ h3 {
     font-family: 'Barlow', sans-serif;
 }
 
-a {
+a:not(.buttonlink) {
     margin: 1.25vw;
     color: #4A8574;
     font-size: 1vw;
@@ -184,6 +184,10 @@ a {
 
 .part1 h1 {
     margin-top: 2.5vw;
+}
+
+.thank {
+    width: 40%;
 }
 
 .part2div {
@@ -379,7 +383,7 @@ textarea, input {
 .bottomright1 a {
     padding: 0;
     margin: 0;
-    padding-right: 2.5vw;
+    padding-right: 1.2vw;
     font-size: 1.5vW;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
