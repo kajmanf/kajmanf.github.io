@@ -1,0 +1,38 @@
+body {
+    background: black;
+    color: blanchedalmond;
+    background: linear-gradient(90deg, blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    text-align: center;
+    border: 1px solid rgba(255,255, 255, 0.55);
+    padding: 1px;
+}
+
+table > thead {
+    background: rgba(255,255, 255, 0.25);
+}
+
+table > thead tr th,
+table > thead tr td {
+    padding: 12px 24px;
+    border: 1px solid grey;
+}
+
+table tr:nth-child(even) {
+    background: rgba(255,255, 255, 0.125);
+}
+
+table tbody tr:hover {
+    cursor: pointer;
+    background: rgba(255,255, 255, 0.5);
+    transition: all;
+}

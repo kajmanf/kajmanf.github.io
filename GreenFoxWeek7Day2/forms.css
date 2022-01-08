@@ -1,0 +1,56 @@
+body {
+    background: grey;
+    color: blanchedalmond;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 50vw;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+form div {
+    box-sizing: border-box;
+    padding: 12px;
+    width: 100%;
+}
+
+form div.half {
+    width: 50%;
+    float: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="range"],
+input[type="reset"],
+input[type="submit"],
+textarea {
+    border-width: 1px;
+    border-radius: 5px;
+    width: calc(100% - 24px);
+    margin: 0px;
+    height: 30px;
+    padding: 6px 12px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    margin: 12px;
+}

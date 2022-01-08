@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <form action="#" method="post">
+            <div>
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" disabled>
+            </div>
+            <div>
+                <label for="email">Email Adress</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" minlength="3">
+            </div>
+            <div>
+                <label for="number">Number</label>
+                <input type="number" id="number">
+            </div>
+            <div>
+                <label for="textarea">Textarea</label>
+                <textarea id="textarea"></textarea>
+            </div>
+            <div>
+                <label for="range">Range</label>
+                <input type="range" id="range" step="10">
+            </div>
+
+            <div class="half">
+                <input type="checkbox" id="c1">
+                <label for="c1">Checkbox1</label>
+                <br>
+
+                <input type="checkbox" id="c2">
+                <label for="c2">Checkbox2</label>
+                <br>
+
+                <input type="checkbox" id="c3">
+                <label for="c3">Checkbox3</label>
+                <br>
+        
+            </div>
+
+            <div>
+                <input type="file">
+            </div>
+
+            <div>
+                <input type="reset" value="Clear everything">
+                <input type="submit" value="Send data">
+            </div>
+
+            <div>
+                <input type="color">
+            </div>
+
+            <div>
+                <input type="time">
+            </div>
+
+            <div>
+                <input type="date">
+            </div>
+            
+            <div>
+                <input type="month">
+            </div>
+            
+            <div>
+                <input type="datetime-local">
+            </div>
+            
+            <div>
+                <input type="week">
+            </div>
+
+            <input type="hidden" id="hidden-info">
+
+        </form>
+
+
+    </div>
+</body>
+</html>
