@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Winning Log :: Create user</title>
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<div class = "container justify-content-center">
+    <div class="form-row mt-1">
+        <div class="col text-center">
+            <h1 class="display-4" > WinningLog login </h1>
+        </div>
+    </div>
+    <div class="row text-center" style="margin-top: 5%">
+        <div th:if="${param.error}" class="col text-center">
+            <h1 class="error text-danger"> Invalid username or password! </h1>
+        </div>
+        <div th:if="${param.logout}" class="col text-center">
+            <h1 class="error text-success"> You have been logged out. </h1>
+        </div>
+    </div>
+    <div class = "row justify-content-center">
+        <form th:action="@{/login}" th:method="post" class="text-center">
+            <div class="mb-3 text-center">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" class="form-control text-center" id="username" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3 text-center">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" class="form-control text-center" id="password" required>
+            </div>
+            <button type="submit" class="col btn btn-primary text-center">Login</button>
+            <a href="/forgotpassword">forgot password</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>

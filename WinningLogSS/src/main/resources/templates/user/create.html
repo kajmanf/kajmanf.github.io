@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>Winning Log :: Create user</title>
+        <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "container justify-content-center">
+            <div class="form-row mt-1">
+                <div class="col text-left">
+                    <form th:action="@{/log/teamleader}"><button type="submit" class="btn btn-outline-primary"><- back</button></form>
+                </div>
+                <div class="col text-right">
+                    <h1 class="display-4" > Create User </h1>
+                </div>
+                <div class="col text-right">
+                    <form th:action="@{/logout}" style="text-align: end"><button type="submit" class="btn btn-outline-primary">logout</button></form>
+                </div>
+            </div>
+            <div class="row text-center" style="margin-top: 5%">
+                <div th:if="${errorMessage != null}">
+                    <h1 class="error text-danger" th:text="${errorMessage}"></h1>
+                </div>
+            </div>
+            <div class = "row justify-content-center">
+                <form action="/user/create/add" th:method="get" class="text-center">
+                    <div class="mb-3 text-center">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" name="username" class="form-control text-center" id="username" aria-describedby="emailHelp" th:value="${userModel.getUserName()}" required>
+                        <div id="emailHelp" class="form-text">
+                            (Must be firstname.lastname)
+                        </div>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control text-center" id="password" th:value="${userModel.getPassword()}" required>
+                        <div id="passwordHelpBlock" class="form-text">
+                            (Your password must be at least 8 characters long, contain letters and numbers.)
+                        </div>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label for="employee" class="form-label">Winning ID</label>
+                        <input type="number" name="employee" class="form-control text-center" id="employee" th:value="${userModel.getEmployee()}" required>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <div class="mb-3 text-center">
+                            <label for="authority" class="form-label"> Authority </label>
+                            <select class="form-control pr-1 pl-1 text-center" name="authority" id="authority" aria-label="Default select example" required>
+                                <option th:value="'USER'">Projektant</option>
+                                <option th:value="'USER,TEAMLEADER'">Teamleader</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-center">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </body>
+</html>

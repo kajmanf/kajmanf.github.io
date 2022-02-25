@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Winning Log :: Assign Project</title>
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<div class = "container">
+    <div class="row-12 text-center mt-1" >
+        <h1 class="display-4" > Log to WinningLog </h1>
+    </div>
+    <div class = "row justify-content-center">
+        <div class="form-row">
+            <div class="col-auto text-center">
+                <form th:action="@{/log}"><button type="submit" class="btn btn-secondary">Log as Projektant</button></form>
+            </div>
+            <div class="col-auto text-center">
+                <form th:action="@{/log/teamleader}"><button type="submit" class="btn btn-secondary">Log as Teamleader</button></form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

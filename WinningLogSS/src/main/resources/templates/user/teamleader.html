@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Winning Log :: Teamleader Page</title>
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<div class = "container">
+    <div class="form-row mt-1">
+        <div class="col-2 text-left">
+        </div>
+        <div class="col-8 text-center">
+            <h1 class="display-4" > Teamleader Page </h1>
+        </div>
+        <div class="col-2 text-center">
+            <form th:action="@{/logout}" style="text-align: end"><button type="submit" class="col btn btn-outline-primary">logout</button></form>
+            <a href="/user/changepassword">Change password</a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 5%">
+        <div th:if="${errorMessage != null}">
+            <h1 class="error text-danger" th:text="${errorMessage}"></h1>
+        </div>
+    </div>
+    <div class = "row justify-content-center">
+        <div class="form-row">
+            <div class="col text-center">
+                <form th:action="@{/user}" class="col-6"><button th:name="lastButton" type="submit" class="btn btn-outline-primary" style="width: 25vw">Users</button></form>
+            </div>
+
+            <div class="col text-center">
+                <form th:action="@{/project}" class="col-6"><button th:name="lastButton" type="submit" class="btn btn-outline-primary" style="width: 25vw">Projects</button></form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class = "row justify-content-center">
+        <form action="/log/teamleader/filter" th:method="post" class="text-center">
+            <div class="form-row">
+                <div class="col-auto">
+                    <label for="datumStart" class="form-label"> Start date </label>
+                    <input type="date" id="datumStart" name="datumStart" class="form-control" required>
+                </div>
+                <div class="col-auto">
+                    <label for="datumEnd" class="form-label"> End Date </label>
+                    <input type="date" id="datumEnd" name="datumEnd" class="form-control" required>
+                </div>
+                <div class="col-auto">
+                    <label for="user" class="form-label"> User </label>
+                    <select class="form-control pr-1 pl-1" th:name="user" id="user">
+                        <option></option>
+                        <option th:each="user : ${users}" th:text="${user.email}" th:value="${user.id}"></option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <label for="project" class="form-label"> Project </label>
+                    <select class="form-control pr-1 pl-1" th:name="project" id="project">
+                        <option></option>
+                        <option th:each="project : ${projects}" th:text="${project.customer} + ' - ' + ${project.projectName}" th:value="${project.id}"></option>
+                    </select>
+                </div>
+                <div class="col-auto" >
+                    <button type="submit" class="btn btn-primary" style="position: absolute; left: 0; bottom: 0;"> Filter </button>
+                </div>
+            </div>
+        </form>
+        <div class="mb-3 text-center">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 10%">Datum</th>
+                    <th scope="col" style="width: 10%">User</th>
+                    <th scope="col" style="width: 10%">Project</th>
+                    <th scope="col" style="width: 5%">Gebaude</th>
+                    <th scope="col" style="width: 15%">Niveau</th>
+                    <th scope="col" style="width: 15%">Plan Type</th>
+                    <th scope="col" style="width: 30%">Plan Name</th>
+                    <th scope="col" style="width: 10%">Index</th>
+                    <th scope="col" style="width: 15%">Arbeitsart</th>
+                    <th scope="col" style="width: 5%">Stunden</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="entity : ${entitys}">
+                    <td th:text="${entity.getDate()}"></td>
+                    <td th:text="${entity.getUser().email}"></td>
+                    <td th:text="${entity.getProject().getCustomerPlusName()}"></td>
+                    <td th:text="${entity.getGebaude()}"></td>
+                    <td th:text="${entity.getNiveau()}"></td>
+                    <td th:text="${entity.getPlanType()}"></td>
+                    <td th:text="${entity.getPlanName()}"></td>
+                    <td th:text="${entity.getPlanIndex()}"></td>
+                    <td th:text="${entity.getArbeitsart()}"></td>
+                    <td th:text="${entity.getStunden()}"></td>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col" style="text-align: right">Suma:</th>
+                    <th scope="col" th:text="${hoursSum}"></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

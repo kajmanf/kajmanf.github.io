@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Winning Log :: Login</title>
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+    <div class = "container">
+        <div class="row-12 text-center mt-1" >
+            <h1 class="display-4" > Log to WinningLog  </h1>
+        </div>
+        <div class="row" style="margin-top: 5%">
+            <div th:if="${errorMessage != null}">
+                <h1 class="error text-danger" th:text="${errorMessage}"></h1>
+            </div>
+        </div>
+        <div class = "row justify-content-center">
+            <form action="/user/login/log" th:method="get" class="text-center">
+                <div class="mb-3 text-center">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group mb-3">
+                        <input type="text" name="email" id="email" class="form-control text-right" placeholder="firstname.lastname">
+                        <span class="input-group-text" id="basic-addon2">@be-winning.com</span>
+                    </div>
+                    <div id="emailHelp" class="form-text">
+                        (without '@be-winning.com')
+                    </div>
+                </div>
+                <div class="mb-3 text-center">
+                    <label for="secret" class="form-label">Password</label>
+                    <input type="password" name="secret" class="form-control text-center" id="secret" placeholder="**************" required>
+                </div>
+                <button type="submit" class="btn btn-primary "> Login </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

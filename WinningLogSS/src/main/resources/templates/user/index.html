@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Winning Log :: Users</title>
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<div class = "container" th:style="'margin: auto'">
+    <div class="form-row mt-1">
+        <div class="col-2 text-left">
+            <form th:action="@{/log/teamleader}" style="text-align: end"><button type="submit" class="btn btn-outline-primary"><- back</button></form>
+        </div>
+        <div class="col-8 text-center">
+            <h1 class="display-4" > Users </h1>
+        </div>
+        <div class="col-2 text-right">
+            <form th:action="@{/logout}" style="text-align: end"><button type="submit" class="btn btn-outline-primary">logout</button></form>
+        </div>
+    </div>
+    <div class="col-auto text-center">
+        <form th:action="@{/user/create}"><button th:name="lastButton" type="submit" class="btn btn-secondary">Add User</button></form>
+    </div>
+    <div class="row" style="margin-top: 5%">
+        <div th:if="${successMessage != null}">
+            <h1 class="error text-success" th:text="${successMessage}"></h1>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Authority</th>
+                    <th scope="col">Winning ID</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user : ${users}">
+                    <td th:text="${users.indexOf(user) + 1}"></td>
+                    <td th:text="${user.email}"></td>
+                    <td th:text="${user.roles}"></td>
+                    <td th:text="${user.employee}"></td>
+                    <td><form th:action="@{/log}"><button th:name="user" th:value="${user.id}" type="submit" class="btn btn-primary col-11">Show log</button></form></td>
+                    <td><form th:action="@{/user/delete}"><button th:name="deleteButton" th:value="${user.id}" type="submit" class="btn btn-danger">Delete</button></form></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
